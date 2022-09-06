@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SE 00037.wav-768a43af022221dfba7a968d03088285.sample"
+
+[deps]
+
+source_file="res://assets/se/SE 00037.wav"
+dest_files=[ "res://.import/SE 00037.wav-768a43af022221dfba7a968d03088285.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

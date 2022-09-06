@@ -1,0 +1,363 @@
+[gd_scene load_steps=48 format=2]
+
+[ext_resource path="res://assets/bak/B102300.tga" type="Texture" id=1]
+[ext_resource path="res://assets/grp/sys_00001.tga" type="Texture" id=3]
+[ext_resource path="res://assets/grp/sys_00000.tga" type="Texture" id=4]
+[ext_resource path="res://assets/grp/sys_00010.tga" type="Texture" id=5]
+[ext_resource path="res://scenc/game.gd" type="Script" id=6]
+[ext_resource path="res://assets/simhei.ttf" type="DynamicFontData" id=7]
+
+[sub_resource type="DynamicFont" id=40]
+size = 28
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 7 )
+
+[sub_resource type="Theme" id=41]
+default_font = SubResource( 40 )
+
+[sub_resource type="DynamicFont" id=38]
+size = 28
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 7 )
+
+[sub_resource type="Theme" id=39]
+default_font = SubResource( 38 )
+
+[sub_resource type="StyleBoxEmpty" id=33]
+
+[sub_resource type="StyleBoxEmpty" id=34]
+
+[sub_resource type="StyleBoxEmpty" id=35]
+
+[sub_resource type="StyleBoxEmpty" id=36]
+
+[sub_resource type="StyleBoxEmpty" id=37]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 40, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 80, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 5 )
+region_rect = Rect2( 40, 40, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 5 )
+region_rect = Rect2( 40, 80, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 5 )
+region_rect = Rect2( 40, 0, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 5 )
+region_rect = Rect2( 80, 40, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 5 )
+region_rect = Rect2( 80, 80, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=13]
+texture = ExtResource( 5 )
+region_rect = Rect2( 80, 0, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=14]
+texture = ExtResource( 5 )
+region_rect = Rect2( 120, 40, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=15]
+texture = ExtResource( 5 )
+region_rect = Rect2( 120, 80, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=16]
+texture = ExtResource( 5 )
+region_rect = Rect2( 120, 0, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=17]
+texture = ExtResource( 5 )
+region_rect = Rect2( 160, 40, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=18]
+texture = ExtResource( 5 )
+region_rect = Rect2( 160, 80, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=19]
+texture = ExtResource( 5 )
+region_rect = Rect2( 160, 0, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=20]
+texture = ExtResource( 5 )
+region_rect = Rect2( 200, 40, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=21]
+texture = ExtResource( 5 )
+region_rect = Rect2( 200, 80, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=22]
+texture = ExtResource( 5 )
+region_rect = Rect2( 200, 0, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=23]
+texture = ExtResource( 5 )
+region_rect = Rect2( 240, 40, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=24]
+texture = ExtResource( 5 )
+region_rect = Rect2( 240, 80, 40, 40 )
+
+[sub_resource type="StyleBoxEmpty" id=25]
+
+[sub_resource type="StyleBoxTexture" id=26]
+texture = ExtResource( 5 )
+region_rect = Rect2( 240, 0, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=27]
+texture = ExtResource( 5 )
+region_rect = Rect2( 280, 40, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=28]
+texture = ExtResource( 5 )
+region_rect = Rect2( 280, 80, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=29]
+texture = ExtResource( 5 )
+region_rect = Rect2( 280, 0, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=30]
+texture = ExtResource( 5 )
+region_rect = Rect2( 320, 40, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=31]
+texture = ExtResource( 5 )
+region_rect = Rect2( 320, 80, 40, 40 )
+
+[sub_resource type="StyleBoxTexture" id=32]
+texture = ExtResource( 5 )
+region_rect = Rect2( 320, 0, 40, 40 )
+
+[node name="game" type="Control"]
+rect_min_size = Vector2( 1280, 720 )
+script = ExtResource( 6 )
+
+[node name="bg" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="char" type="Control" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+mouse_filter = 2
+
+[node name="center" type="TextureRect" parent="char"]
+margin_right = 1280.0
+margin_bottom = 720.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="right" type="TextureRect" parent="char"]
+margin_left = 290.0
+margin_right = 1570.0
+margin_bottom = 720.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="left" type="TextureRect" parent="char"]
+margin_left = -290.0
+margin_right = 990.0
+margin_bottom = 720.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="dialog" type="Control" parent="."]
+margin_top = 512.0
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_min_size = Vector2( 1280, 0 )
+mouse_filter = 2
+size_flags_vertical = 0
+theme = SubResource( 41 )
+
+[node name="box" type="HBoxContainer" parent="dialog"]
+margin_right = 1280.0
+rect_min_size = Vector2( 1280, 208 )
+size_flags_horizontal = 6
+size_flags_vertical = 0
+theme = SubResource( 39 )
+
+[node name="Control" type="Control" parent="dialog/box"]
+margin_left = 16.0
+margin_right = 1264.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 1248, 208 )
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="dialog/box/Control"]
+modulate = Color( 1, 1, 1, 0.847059 )
+margin_right = 1248.0
+margin_bottom = 208.0
+size_flags_horizontal = 7
+texture = ExtResource( 3 )
+
+[node name="TextureRect2" type="TextureRect" parent="dialog/box/Control"]
+margin_right = 1248.0
+margin_bottom = 208.0
+texture = ExtResource( 4 )
+
+[node name="text" type="RichTextLabel" parent="dialog"]
+margin_left = 278.0
+margin_top = 58.0
+margin_right = 1078.0
+margin_bottom = 178.0
+rect_min_size = Vector2( 800, 100 )
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="Tween" type="Tween" parent="dialog/text"]
+
+[node name="name" type="Label" parent="dialog"]
+margin_left = 240.0
+margin_top = 21.0
+margin_right = 1040.0
+margin_bottom = 52.0
+
+[node name="Button" type="Button" parent="dialog"]
+margin_top = -510.0
+margin_right = 1280.0
+margin_bottom = 210.0
+mouse_filter = 1
+custom_styles/hover = SubResource( 33 )
+custom_styles/pressed = SubResource( 34 )
+custom_styles/focus = SubResource( 35 )
+custom_styles/disabled = SubResource( 36 )
+custom_styles/normal = SubResource( 37 )
+
+[node name="menu_list" type="HBoxContainer" parent="dialog"]
+margin_left = 888.0
+margin_top = 168.0
+margin_right = 1280.0
+margin_bottom = 208.0
+mouse_filter = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="qload" type="Button" parent="dialog/menu_list"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+
+[node name="qsave" type="Button" parent="dialog/menu_list"]
+margin_left = 44.0
+margin_right = 84.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/disabled = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="options" type="Button" parent="dialog/menu_list"]
+margin_left = 88.0
+margin_right = 128.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_styles/hover = SubResource( 11 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 13 )
+
+[node name="load" type="Button" parent="dialog/menu_list"]
+margin_left = 132.0
+margin_right = 172.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_styles/hover = SubResource( 14 )
+custom_styles/pressed = SubResource( 15 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 16 )
+
+[node name="save" type="Button" parent="dialog/menu_list"]
+margin_left = 176.0
+margin_right = 216.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_styles/hover = SubResource( 17 )
+custom_styles/pressed = SubResource( 18 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 19 )
+
+[node name="save2" type="Button" parent="dialog/menu_list"]
+margin_left = 220.0
+margin_right = 260.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_styles/hover = SubResource( 20 )
+custom_styles/pressed = SubResource( 21 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 22 )
+
+[node name="save3" type="Button" parent="dialog/menu_list"]
+margin_left = 264.0
+margin_right = 304.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_styles/hover = SubResource( 23 )
+custom_styles/pressed = SubResource( 24 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+
+[node name="save4" type="Button" parent="dialog/menu_list"]
+margin_left = 308.0
+margin_right = 348.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_styles/hover = SubResource( 27 )
+custom_styles/pressed = SubResource( 28 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 25 )
+custom_styles/normal = SubResource( 29 )
+
+[node name="save5" type="Button" parent="dialog/menu_list"]
+margin_left = 352.0
+margin_right = 392.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_styles/hover = SubResource( 30 )
+custom_styles/pressed = SubResource( 31 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 25 )
+custom_styles/normal = SubResource( 32 )
+
+[connection signal="gui_input" from="." to="." method="_on_game_gui_input"]
+[connection signal="button_down" from="dialog/Button" to="." method="_on_Button_button_down"]

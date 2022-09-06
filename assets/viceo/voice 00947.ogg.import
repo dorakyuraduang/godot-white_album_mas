@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/voice 00947.ogg-5cdb70a37e516c9517246bc1b3564b94.oggstr"
+
+[deps]
+
+source_file="res://assets/viceo/voice 00947.ogg"
+dest_files=[ "res://.import/voice 00947.ogg-5cdb70a37e516c9517246bc1b3564b94.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
